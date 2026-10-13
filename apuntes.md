@@ -9,7 +9,7 @@ COMPONENTES FUNDAMENTALES DE ANDROID:
 1. Actividades (Fragmentos) - Asociado a GUIs de las apps, (Fragmentos solos no van, necesitan ir dentro de una actividad)
 	UNA SOLA ACTIVIDAD POR PANTALLA
 
-2. Servicios - Trabajan en segundo plano, no tienen interfaz grafica
+2. Servicios - Deben trabajar en segundo plano porque no tienen interfaz grafica
 
 3. Proveedores de contenidos - Intercambiar información entre apps (están en un sandbox y sin este componente no pueden)
 
@@ -17,6 +17,13 @@ COMPONENTES FUNDAMENTALES DE ANDROID:
 
 ## CICLOS DE VIDA DE UNA ACTIVIDAD
 Eventos declarados por el SO a los que te suscribes y que te permite meter código (fuera de los eventos no se puede) 
+
+#TEMA 2
+
+## INTENTS:
+
+- Comunicación entre procesos
+- 
 
 ## CÓDIGO
 
@@ -71,4 +78,17 @@ cada vez q creamos una clase nueva hay q ponerlo ahí, deberia aparecer la segun
 
 ### Teoría de gestión de eventos (diapos)
 Hace falta definir la funcion q se escucha (meter codigo) y Registrar el metodo a elementos de la vista para q la funcion se ejecute
+
+exported = true en el manifest permite que el componente sea llamado desde otro
+
+
+# LAYOUTS:
+
+no se puede usar FindViewByID, prohibido.
+
+no es obligatorio usar id a menos que quieras interactuar con el elemento
+
+VIEWS y VIEWGROUPS:
+
+TextView o Button (p.ej) son Views, LinearLayout o ScrollView son ViewGroups
 

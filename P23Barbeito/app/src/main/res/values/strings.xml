@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">P23.Barbeito</string>
+    <string name="but_a_string">a</string>
+    <string name="but_b_string">b</string>
+    <string name="but_url_string">url</string>
+    <string name="but_clear_string">clear</string>
+    <string name="but_enable_string">Enable</string>
+    <string name="default_url_string">https://fic.udc.es</string>
+
+</resources>

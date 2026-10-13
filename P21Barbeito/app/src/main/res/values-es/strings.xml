@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">P21.Barbeito</string>
+    <string name="but_main_string">Barbeito</string>
+    <string name="zero_string">0</string>
+    <string name="app_name2">2.Barbeito</string>
+    <string name="string_hello">¡Hola Mundo!</string>
+    <string name="boton_string">Botón</string>
+</resources>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">P22.Barbeito</string>
+    <string name="edit_text_hint">Enter text...</string>
+    <string name="but_share_string">Share</string>
+    <string name="empty_string">Edit text is empty</string>
+    <string name="but_continue_string">Continue</string>
+    <string name="but_reaction_string">React</string>
+    <string name="reaction_1">Happy</string>
+    <string name="reaction_2">Sad</string>
+    <string name="reaction_3">Laugh</string>
+    <string name="share_activity_name">P22 Share Activity</string>
+    <string name="reaction_activity_name">P22 Reaction Activity</string>
+
+</resources>

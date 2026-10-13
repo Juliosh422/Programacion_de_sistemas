@@ -31,10 +31,40 @@ public class MainActivity extends AppCompatActivity {
         but_main.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Acción a realizar cuando se hace clic en el botón
-                Log.d("_TAG",  "boton pulsado"); //es .d de debug, hay otros como w para warning etc... no hay q poner el tag en recursos pq el usuario no lo ve
-                ((Button) view).setText(R.string.but_main_string);
+                Log.d("_TAG", "Nombre actual: " + ((Button) view).getText());
+                ((Button) view).setText(R.string.boton_string); // nuevo recurso "Botón"
             }
         });
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d("_TAG", "MainActivity - onStart");
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.d("_TAG", "MainActivity - onResume");
+    }
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d("_TAG", "MainActivity - onPause");
+    }
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d("_TAG", "MainActivity - onStop");
+    }
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d("_TAG", "MainActivity - onDestroy");
+    }
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.d("_TAG", "MainActivity - onRestart");
     }
 }
