@@ -92,3 +92,9 @@ VIEWS y VIEWGROUPS:
 
 TextView o Button (p.ej) son Views, LinearLayout o ScrollView son ViewGroups
 
+# SERVICIOS:
+
+Cuidado con copiar las diapositivas tal cual, en el ejemplo de declaracion diapo 21, hay q sacar el binder (si hace falta)
+
+No sobrecargar onStop y onStart en las actividades (diapo 23)
+

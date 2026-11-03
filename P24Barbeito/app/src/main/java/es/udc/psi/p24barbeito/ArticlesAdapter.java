@@ -1,0 +1,78 @@
+package es.udc.psi.p24barbeito;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
+
+import es.udc.psi.p24barbeito.Article;
+import es.udc.psi.p24barbeito.databinding.ItemBinding;
+
+public class ArticlesAdapter extends RecyclerView.Adapter<ArticlesAdapter.MyViewHolder> {
+
+    public interface OnItemClickListener {
+        void onClick(View view, int position);
+    }
+
+    private OnItemClickListener clickListener;
+
+    public void setClickListener(OnItemClickListener itemClickListener) {
+        clickListener = itemClickListener;
+    }
+
+    private final ArrayList<Article> mDataset;
+
+    public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+
+        private final ItemBinding binding;
+
+        public MyViewHolder(ItemBinding binding) {
+            super(binding.getRoot());
+            this.binding = binding;
+            binding.getRoot().setOnClickListener(this);
+        }
+
+        public void bind(Article article) {
+            binding.itemTitle.setText(article.getTitle());
+            binding.itemSubtitle.setText(article.getSubtitle());
+        }
+
+        @Override
+        public void onClick(View view) {
+            int position = getAdapterPosition();
+            if (clickListener != null && position != RecyclerView.NO_POSITION) {
+                clickListener.onClick(view, position);
+            }
+        }
+    }
+
+    public ArticlesAdapter(ArrayList<Article> myDataset) {
+        mDataset = myDataset;
+    }
+
+    @NonNull
+    @Override
+    public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        ItemBinding binding = ItemBinding.inflate(
+                LayoutInflater.from(parent.getContext()), parent, false);
+        return new MyViewHolder(binding);
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
+        holder.bind(mDataset.get(position));
+    }
+
+    @Override
+    public int getItemCount() {
+        return mDataset.size();
+    }
+
+    public Article getItem(int i) {
+        return mDataset.get(i);
+    }
+}

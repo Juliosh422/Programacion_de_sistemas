@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">P25.Barbeito</string>
+    <string name="hello_string">Resultado</string>
+    <string name="tv_local_service">Servicio local</string>
+    <string name="tv_bind_service">Servicio enlazado</string>
+    <string name="tv_background_task">Tarea 2º plano</string>
+    <string name="btn_broadcast">Lanzar emisión</string>
+    <string name="btn_get">Get</string>
+    <string name="btn_set">Set</string>
+    <string name="hint_count">Número de cuentas</string>
+    <string name="default_count">10</string>
+</resources>

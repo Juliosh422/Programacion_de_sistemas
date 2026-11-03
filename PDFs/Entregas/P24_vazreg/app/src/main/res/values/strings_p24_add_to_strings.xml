@@ -1,0 +1,16 @@
+<!-- Añade estas líneas dentro de <resources> de tu res/values/strings.xml -->
+<resources>
+    <string name="btn_clear">Borrar todo</string>
+    <string name="btn_add">Añadir</string>
+    <string name="btn_cancel">Cancelar</string>
+    <string name="btn_delete">Eliminar</string>
+    <string name="btn_edit">Editar</string>
+    <string name="btn_ok">OK</string>
+    <string name="label_title">Título</string>
+    <string name="label_subtitle">Subtítulo</string>
+    <string name="label_description">Descripción</string>
+    <string name="dialog_add_title">Añadir elementos</string>
+    <string name="dialog_add_message">Número de nuevos elementos</string>
+    <string name="msg_deleted">Eliminado el elemento %1$d</string>
+    <string name="msg_edited">Editado el elemento %1$d</string>
+</resources>

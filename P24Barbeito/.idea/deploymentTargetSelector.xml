@@ -4,7 +4,7 @@
     <selectionStates>
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2026-10-08T15:25:42.591050256Z">
+        <DropdownSelection timestamp="2026-10-14T14:07:09.823242154Z">
           <Target type="DEFAULT_BOOT">
             <handle>
               <DeviceId pluginId="LocalEmulator" identifier="path=/home/hulio/.android/avd/Pixel_10a.avd" />

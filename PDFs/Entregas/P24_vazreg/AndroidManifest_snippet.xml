@@ -1,0 +1,4 @@
+<!-- Dentro de <application> de AndroidManifest.xml, junto a MainActivity -->
+<activity
+    android:name=".DetailActivity"
+    android:exported="false" />
